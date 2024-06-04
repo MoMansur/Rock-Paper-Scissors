@@ -93,9 +93,12 @@ img{
 @media (max-width: 600px) {
     #choices{
         display: flex;
+        height: 20vh;
+        align-items: end;
         margin-top: auto;
         margin-bottom: 20px;
         justify-content: center;
+        flex-shrink: 0;
 
     }
     .choice {
