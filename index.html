@@ -6,6 +6,7 @@
     <title>Rock-Paper-Scissors</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -15,30 +16,63 @@
     <div class="container">
         <div class="row" id="displayRow">
             <div id="display">
-                <div id="humanChoiceDisplay"></div>
-                <div id="computerChoiceDisplay"></div>
+                
+                <div id="humanChoiceDisplay">
+                    <!-- <img src="./img/questionMark.png"> -->
+                    <span class="you text-center">
+                        <i class="fa-solid fa-user"></i>YOU</span>
+                </div>
+                <div id="computerChoiceDisplay">
+                    <!-- <img src="./img/questionMark.png"> -->
+                    <span class="computer text-center">
+                        <i class="fa-solid fa-robot"></i>AI</span>
+    
+                    </div>
+                </div>
+
+
             </div>
-        </div>
+        
         <div class="row">
-            <h3 class="text-center" id="winMessage"></h3>
+            <h3 class="text-center" id="winMessage">Start</h3>
         </div>
         <div class="row">
             <div id="scores">
-                <div id="humanScore">1</div>
-                <div id="computerScore">0</div>
+                <div id="humanScore">-</div>
+                <div id="computerScore">-</div>
             </div>
         </div>
 
         <div class="row">
             <div id="choices">
-                    <span id="rock" class="choice"><img src="./img/rock3.png">
-                        <h3>Rock</h3></span>
-
-                    <span id="paper"class="choice"><img src="./img/paper2.png"><h3>Paper</h3></span>
-                    <span id="scissors"class="choice"><img src="./img/scissors2.png"><h3>Scissors</h3></span>
+                    <button id="rock" class="choice">
+                        <img src="./img/rock3.png">
+                  
+                    </button>
+                    <button id="paper" class="choice">
+                        <img src="./img/paper2.png">
+                     
+                    </button>
+                    <button id="scissors" class="choice">
+                        <img src="./img/scissors2.png">
+                  
+                        </button>
             </div>
         </div>
     </div>
 
+    <div id="gameOverPopup" class="popup">
+        <div class="popup-content">
+            <h2 id="gameOverStatus">Status</h2>
+            <h3 id="gameOverText" class="text-center">Game Over</h2>
+            <button id="restartGameBtn">Restart Game</button>
+        </div>
+    </div>
+    
+    
+    <script src="./script.js"></script>
+
+  
+  
 </body>
 </html>
